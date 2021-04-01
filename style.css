@@ -2,45 +2,60 @@ h1 {
   height: 1200px;
 }
 
+.js-scroll .backgroundbar {
+  opacity: 1;
+  fill: #ededed;
+}
+
+.mainbar {
+  fill: #39b2b1;
+}
+
+.text {
+  fill: #fff;
+}
+
+.darkbar {
+  fill: #c9c9c9;
+}
+
+.low-opacity-text {
+  opacity: 0.5;
+}
+
 .js-scroll {
   opacity: 0;
-  transition: opacity 500ms;
 }
 
 .js-scroll.scrolled {
   opacity: 1;
 }
 
-.scrolled.slide-left {
+.scrolled .slide-left {
   animation: slide-in-left 2s;
 }
 
-.scrolled.slide-left-far {
+.scrolled .slide-left-far {
   animation: slide-in-left-far 2.2s;
 }
 
-.scrolled.pop-up {
-  animation: pop-up 2s;
+.scrolled .pop-up {
+  animation: pop-up 2.3s;
+}
+.scrolled .pop-up-late1 {
+  animation: pop-up 2.5s;
+}
+
+.scrolled .pop-up-late2 {
+  animation: pop-up 2.7s;
+}
+
+.scrolled .pop-up-late3{
+  animation: pop-up 2.9s;
 }
 
 svg {
-  margin-bottom: 40em;
-}
-
-.border {
-  fill: #b5b5b5;
-}
-
-.bar1 {
-  fill: #39b2b1;
-}
-
-.bar2 {
-  fill: #2f9493;
-}
-
-.text {
-  fill: #298784;
+  margin-bottom: 10em;
 }
 
 @keyframes slide-in-left {

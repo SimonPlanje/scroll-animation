@@ -1,5 +1,3 @@
-console.log('working')
-
 const scrollElements = document.querySelectorAll(".js-scroll");
 
 const elementInView = (el, dividend = 1) => {
@@ -28,15 +26,20 @@ const hideScrollElement = (element) => {
 };
 
 const handleScrollAnimation = () => {
-    scrollElements.forEach((el) => {
-        if (elementInView(el, 1.25)) {
-            displayScrollElement(el);
-        } else if (elementOutofView(el)) {
-            hideScrollElement(el)
-        }
-    })
+        scrollElements.forEach((el) => {
+            if (elementInView(el, 1.25)) {
+                displayScrollElement(el);
+            } else if (elementOutofView(el)) {
+                hideScrollElement(el)
+            }
+        })
+    
+    
+
 }
 
 window.addEventListener("scroll", () => {
     handleScrollAnimation();
 });
+
+console.log(document.querySelectorAll('.view'))
